@@ -15,7 +15,6 @@
 // limitations under the License.
 //
 using Amazon.Runtime.Internal.Transform;
-using Amazon.Runtime.Internal.Util;
 using System;
 using System.Collections;
 using System.Threading;
@@ -23,6 +22,8 @@ using UnityEngine;
 
 namespace Amazon.Runtime.Internal
 {
+    using Logger = Amazon.Runtime.Internal.Util.Logger;
+
     /// <summary>
     /// This class is used to dispatch web requests using the WWW API and
     /// to call user callbacks on the main thread.

@@ -21,11 +21,12 @@ using System.IO;
 using System.Net;
 using System.Linq;
 using UnityEngine;
-using Amazon.Runtime.Internal.Util;
 
 
 namespace Amazon.Runtime.Internal.Transform
 {
+    using ILogger = Amazon.Runtime.Internal.Util.ILogger;
+    using Logger = Amazon.Runtime.Internal.Util.Logger;
     /// <summary>
     /// Implementation of response interface for WWW API.
     /// </summary>

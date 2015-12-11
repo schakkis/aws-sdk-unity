@@ -19,7 +19,6 @@ using System.Collections;
 using System.Diagnostics;
 using System.Collections.Generic;
 using System;
-using Amazon.Runtime.Internal.Util;
 using System.IO;
 using System.Linq;
 using System.Xml.Linq;
@@ -31,6 +30,8 @@ using Amazon.Runtime.Internal;
 
 namespace Amazon
 {
+    using Logger = Amazon.Runtime.Internal.Util.Logger;
+
     public static partial class AWSConfigs
     {
         private static List<string> standardConfigs = new List<string>() { "region", "logging", "correctForClockSkew" };

@@ -33,6 +33,8 @@ using UnityEditor;
 #endif
 namespace Amazon
 { 
+    using Logger = Amazon.Runtime.Internal.Util.Logger;
+
     /// <summary>
     /// A singleton instance of which will initialize the Main thread dispatcher & logger.
     /// This class is linked to the AWSPrefab so that user can make any configuration 

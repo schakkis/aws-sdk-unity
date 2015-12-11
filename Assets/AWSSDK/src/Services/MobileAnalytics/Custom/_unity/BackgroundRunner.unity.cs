@@ -14,16 +14,15 @@
 // for the specific language governing permissions and 
 // limitations under the License.
 //
-using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using System;
-using Amazon.Runtime.Internal.Util;
 
 
 namespace Amazon.MobileAnalytics.MobileAnalyticsManager.Internal
 {
+    using Logger = Amazon.Runtime.Internal.Util.Logger;
+
     /// <summary>
     /// Amazon mobile analytics background runner.
     /// Background runner periodically sends events to server.

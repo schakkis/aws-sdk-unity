@@ -19,12 +19,11 @@ using System.Collections;
 using System.Threading;
 using System.Globalization;
 using System.Runtime.InteropServices;
-using Amazon.Runtime.Internal.Util;
-
 
 namespace Amazon.Util.Internal
 {
-    
+    using Logger = Amazon.Runtime.Internal.Util.Logger;
+
     /// <summary>
     /// This class can access hooked platform (iOS, Android etc.) information.
     /// For example, locale, make, application version and title.

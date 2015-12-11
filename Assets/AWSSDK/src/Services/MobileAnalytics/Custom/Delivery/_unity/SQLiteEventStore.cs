@@ -28,11 +28,12 @@ using ThirdParty.Json.LitJson;
 using Amazon.MobileAnalytics.MobileAnalyticsManager;
 using Amazon.Util.Storage.Internal;
 using Amazon.Util;
-using Amazon.Runtime.Internal.Util;
 using Amazon.Util.Internal;
 
 namespace Amazon.MobileAnalytics.MobileAnalyticsManager.Internal
 {
+    using Logger = Amazon.Runtime.Internal.Util.Logger;
+
     internal class SQLiteEventStore:IEventStore
     {
         private static Logger _logger = Logger.GetLogger(typeof(SQLiteEventStore));
